@@ -5,13 +5,16 @@ body {
 #Nav_bar{
   background-color: lightgray;
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 #Nav_name{
   display: flex;
+  padding: 0px;
 }
 #Nav_name li{
   display: inline;
+  text-align: center;
   width: 100%;
   height: 100%;
 }
@@ -111,6 +114,8 @@ article h2 {
 #About img{
   width: 60%;
 }
+
+
 .food {
   text-align: center;
   margin: auto;
@@ -119,6 +124,69 @@ article h2 {
  .food img{
   width: 250px;
 }
+
+#TodoBackground {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+#TodoLeft img{
+  width: 50%;
+  display: grid;
+  grid-template-rows: auto;
+  padding: 10%;
+  margin: auto;
+  opacity: 0.7;
+}
+#TodoLeft img:hover {
+  opacity: 1.0;
+  transform:scale(2);
+}
+#TodoRight img{
+  width: 50%;
+  display: grid;
+  grid-template-rows: auto;
+  padding: 10%;
+  margin: auto;
+  opacity: 0.7;
+}
+#TodoRight img:hover {
+  opacity: 1.0;
+  transform:scale(2);
+}
+
+#Top {
+  text-align: center;
+}
+#TodoBox {
+  border: 3px solid gray;
+  width: 70%;
+  margin: auto;
+  margin-top: 15%;
+}
+#TodoBox input {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 3px dotted brown;
+}
+#TodoBox button {
+  border: 3px solid black;
+}
+#TodoBox li {
+  margin: 10px;
+  text-align: left;
+}
+#TodoImg img {
+  width: 15%;
+  display: inline;
+  margin-top: 100%;
+  margin-bottom: 0%;
+}
+
+
 @media(max-width: 1290px){
   #main {
     display: grid;
