@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyProject</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="Nav_bar">
+              <ul id="Nav_name">
+                <li><a href="Home.html" title="Home">Home</a></li>
+                <li><a href="Yummy.html">Yummy</a></li>
+                <li><a href="TodoList.html">To do list</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="">Calender</a></li>
+              </ul>
+            </nav>
+          </header>
+        <input type="text" oninput="function Game">
+        <script>
+            var Game = function () {
+                for (var word='제로초'; true;) {
+                  var answer = prompt(word)
+                    if (word[word.length - 1] === answer[0]) {
+                     word = answer;
+                        } else {
+                          alert('끝말잇기란 말이에요!')
+                        }
+                     
+                }
+            }
+        </script>
+
+    </body>
+</html>
