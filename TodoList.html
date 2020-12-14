@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todo.css">
     <title>My Homepage</title>
   </head>
   <body>
@@ -29,12 +29,14 @@
           <h1>To do List</h1> <p> ~ 2021 ver. ~ </p>
           <div>코로롱 꺼져</div>
           <div id="TodoBox">
-            <input type="text" id="toDoForm">
-            <ul id="js-toDoList">
+            <form id="form">
+              <input type="text" value="입력 후 Enter를 눌러주세요" id="input">
+            <form>
+            <ul id="list">
               <li> 치킨 만들기 </li>
               <li> 치즈 브라우니 만들기 </li>
             </ul>
-            <script src="script.js"></script>
+            <script src="todo.js"></script>
             <div id="TodoImg">
               <img src="passport.png">
               <img src="bake.png">
